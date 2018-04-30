@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#F0F0F0" >
+    <LinearLayout
+        android:id="@+id/chatting"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+        <TextView
+            android:id="@+id/chatname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="용화"
+            android:textSize="20dp"
+            android:paddingRight="3dp"
+            android:textColor="#F0F0F0"/>
+    </LinearLayout>
+    <ListView
+        android:layout_below="@+id/chatting"
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:divider="#ffffff">
+    </ListView>
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#F5F5F5"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/exitBtn"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/exit"
+                android:layout_weight="0.1"/>
+
+            <LinearLayout
+                android:layout_weight="3"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/namebutton">
+                <EditText
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:hint="메세지를 입력하세요."
+                    android:id="@+id/chatText"
+                    android:inputType="textMultiLine"
+                    android:maxLines="4"
+                    android:layout_weight="0.92"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:background="@null"
+                    android:paddingLeft="5dp"
+                    />
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/sendBtn"
+                    android:text="전송"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#88000000"
+                    android:background="#FDC8C2"
+                    android:onClick="onSendBtnClicked"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

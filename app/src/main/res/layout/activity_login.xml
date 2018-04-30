@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="EASY CARRY"
+            android:textColor="@android:color/white"
+            android:textSize="45dp"
+            android:textStyle="bold|italic"/>
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_weight="1">-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/facebookBtn"-->
+                <!--android:layout_width="145dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:layout_marginRight="23dp"-->
+                <!--android:background="@drawable/facebook"-->
+                <!--android:gravity="center"-->
+                <!--android:text="facebook"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/googleBtn"-->
+                <!--android:layout_width="145dp"-->
+                <!--android:layout_height="40dp"-->
+                <!--android:background="@drawable/namebutton4"-->
+                <!--android:text="Google"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textStyle="bold"/>-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center">-->
+
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/editText2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.1"-->
+        <!--android:gravity="center"-->
+        <!--android:text="-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; or -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:textSize="20dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:background="@drawable/namebutton3"
+            android:drawableLeft="@drawable/mail"
+            android:drawablePadding="15dp"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/pwdEt"
+            android:layout_width="310dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/namebutton3"
+            android:drawableLeft="@drawable/locked"
+            android:drawablePadding="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/signinBtn"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:background="@drawable/namebutton4"
+            android:text="Sign in"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/signupTxt"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="SIGNUP NOW"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

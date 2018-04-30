@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="8">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:text="LOCKER INFORMATION"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="LOCKER SIZE"
+                android:textSize="20dp" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <RadioButton
+                    android:id="@+id/lockerSize_L"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="L" />
+
+                <RadioButton
+                    android:id="@+id/lockerSize_M"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="M"
+                    android:gravity="center"/>
+
+                <RadioButton
+                    android:id="@+id/lockerSize_S"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="S"
+                    android:gravity="center"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="LOCKER NUMBER"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/lockernumEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your locker number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="LOCKER PASSWORD"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/lockerpwdEt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter your locker password" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:gravity="center"
+                android:text="Please take your lugguage's picture"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/pictureSelectionImgView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="위 이미지를 클릭해 사진을 찍어주세요"/>
+
+            <Button
+                android:id="@+id/successBtn"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_margin="50dp"
+                android:background="@drawable/success" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

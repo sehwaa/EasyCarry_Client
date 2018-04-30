@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/relativeLayout01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#12000000"
+        android:padding="20dp">
+
+        <TextView
+            android:textColor="#ffffff"
+            android:id="@+id/dataItem01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:padding="4dp"
+            android:text="2015.01.28"/>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/dataItem01"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/text1"
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:src="@drawable/startend"/>
+
+            <TextView
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:textSize="25dp"
+                android:id="@+id/dataItem02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="출발역0000"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/text1" />
+
+            <TextView
+                android:id="@+id/dataItem03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dataItem02"
+                android:layout_marginTop="28dp"
+                android:layout_toRightOf="@+id/text1"
+                android:layout_marginLeft="10dp"
+                android:textColor="#ffffff"
+                android:textSize="25dp"
+                android:text="도착역0000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dataItem04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5000원"
+                android:textSize="20dp"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

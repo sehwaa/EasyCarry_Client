@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/info"
+            android:title="메인메뉴"/>
+
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/info"
+            android:title="내정보" />
+
+        <item
+            android:id="@+id/nav_purchase_history"
+            android:icon="@drawable/list"
+            android:title="구매내역" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/settings"
+            android:title="환경설정" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="로그아웃" />
+    </group>
+
+</menu>
